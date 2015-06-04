@@ -13,3 +13,7 @@
 
 * [raf-stream](https://www.npmjs.com/package/raf-stream) Request Animation Frame in stream format for client
 
+### Ressources 
+
+* [Official documentation](https://nodejs.org/api/stream.htm)
+* [Stream Handbook](https://github.com/substack/stream-handbook) By substack
