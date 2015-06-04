@@ -17,7 +17,11 @@ geekorifier._transform = function(chunk, encoding, callback) {
 
   //replace chars with a numbers
   var transformed = _.map(letters, function(c){
-    return GEEK_LETTERS_MAP[c.toLowerCase()] || c;
+    if(GEEK_LETTERS_MAP[c.toLowerCase()] !== undefined){
+      return GEEK_LETTERS_MAP[c.toLowerCase()];
+    }else{
+      return c;
+    }
   });
 
   var result = '-> ' + transformed.join('');
