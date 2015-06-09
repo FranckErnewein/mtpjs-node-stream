@@ -17,7 +17,7 @@ var FIELDS = [
 
 var array_to_xml = new stream.Transform({
     encoding: 'utf8',
-    readableObjectMode: true,
+    objectMode: true,
 });
 
 array_to_xml._transform = function(array, encoding, callback){
